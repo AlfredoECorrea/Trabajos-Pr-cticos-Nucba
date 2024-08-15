@@ -1,0 +1,89 @@
+/* -------------Fuentes -------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=New+Amsterdam&display=swap');
+
+/* ------------ Variables -------------*/
+
+:root{
+
+    --background: beige;
+    --primary: red;
+    --secondary: blue;
+    --btn-gb: yellow;
+    --nav-bg: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background: black;*/
+    list-style: none;
+    text-decoration: none;
+    font-family: "New Amsterdam";
+
+}
+
+body{
+    background-color: var(--background);
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    height: 80px;
+    position: fixed;
+    width:100% ;
+}
+
+.Navbar, .Navbar-list{
+
+    display: flex;
+    align-items: center;
+
+}
+.Navbar{
+    gap: 100px;
+}
+.Navbar-list{
+    gap: 30px;
+}
+.Navbar-list a{
+    color: var(--primary);
+}
+.Navbar-list a:hover{
+    color: blue;
+}
+.Navbar-list .active{
+    font-weight: 700;
+    color: var(--primary);
+}
+.logo{
+    height: 200%;
+}
+.cart-icono{
+    height: 30px;
+    padding: 5px 10px;
+    
+}
+
+.Navbar-sublist{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    width: auto;
+    border: 1px;
+}
+.Navbar-sublist > li > a{
+    border: 1px;
+}
+
+.Navbar-list li:hover .Navbar-sublist{
+    display:flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: auto;
+    border: 1px;
+    border-color: black;
+}
