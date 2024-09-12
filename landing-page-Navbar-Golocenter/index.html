@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golocenter - Navbar</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <!-- 
@@ -20,8 +21,8 @@
         <nav class="Navbar">
             <ul class="Navbar-list">
                 <li ><a href="#hero" class="active">Inicio</a></li>
-                <li><a href="#">Golosinas</a>
-                    <ul class="Navbar-sublist">
+                <li><a href="#golosinas">Golosinas</a>
+                    <!-- <ul class="Navbar-sublist">
                         <li><a href="">Alfajores</a></li>
                         <li><a href="">Caramelos</a></li>
                         <li><a href="">Chupetines</a></li>
@@ -33,10 +34,10 @@
                         <li><a href="">Jugos</a></li>
                         <li><a href="">Jugos p/ congelar</a></li>
                         <li><a href="">Gaseosas</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li><a href="#">Combos Cumpleaños</a>
-                    <ul class="Navbar-sublist">
+                <li><a href="#combos">Combos Cumpleaños</a>
+                 <!--   <ul class="Navbar-sublist">
                         <li><a href="">Combos 10 chicos</a></li>
                         <li><a href="">Combos 15 chicos</a></li>
                         <li><a href="">Combos 20 chicos</a></li>
@@ -48,15 +49,15 @@
                         <li><a href="">Combos 50 chicos</a></li>
                         <li><a href="">Combos 60 chicos</a></li>
 
-                    </ul>
+                    </ul> -->
                 
                 </li>
-                <li><a href="#">Cotillón</a>
+                <li><a href="#cotillon">Cotillón</a>
                     <ul>
 
                     </ul>
                 </li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#contacto">Contactos</a></li>
 
             </ul>
             <img src="img/carrito.png" alt="Carrito de compras" class="cart-icono">
@@ -65,7 +66,7 @@
     </header>
 
     <main>
-        
+        <!------- HERO-PORTADA ---------->
         <section id="hero">
             <div class="hero-info">
 
@@ -87,21 +88,21 @@
                     
                     <img src="img\golosinas-fondo2.jpg" alt="">
 
-                    <a href="" class="hero-a">Golosinas</a>
+                    <a href="#golosinas" class="hero-a">Golosinas</a>
                     
                 </div>
                 <div class="hero-card-img">
                     
                     <img src="img/combo-cumple.webp" alt="">
 
-                    <a href="" class="hero-a">Combos Cumpleaños</a>
+                    <a href="#combos" class="hero-a">Combos Cumpleaños</a>
                     
                 </div>
                 <div class="hero-card-img">
                     
                     <img src="img/fondo-cotillon.jpg" alt="">
 
-                    <a href="" class="hero-a">Cotillon</a>
+                    <a href="#cotillon" class="hero-a">Cotillon</a>
                     
                 </div>
 
@@ -109,42 +110,509 @@
             
 
         </section>
-
-        <section id="abount">
-
-            <div class="abount-h1">
-                <h1>Quiénes Somos</h1>
-            </div>
+        <!------- ABOUNT-QUIENES-SOMOS ---------->
+        <section class="abount" id="abount">
 
             <div class="abount-info">
         
+                <h1>Quiénes somos</h1>
                 <p>
-            
-                    Golocenter golosinas y cotillón, entregando dulzura desde el año 2000.
-
+                    Golocenter golosinas y cotillón, entregando dulzura desde el 2000. 
+                    <br>
+                    <br>
                     Somos una empresa dedicada a festejos, felicitaciones, alegrías y conmemoraciones  siempre dispuesta a brindarte el mejor servicio y la mejor variedad.
-
-                    Los rubros que abarcamos te dan la posibilidad de encontrar todo lo que necesitas para REGALOS, INSUMOS REPOSTEROS, DESCARTABLES, COTILLON y EL MEJOR SURTIDO DE GOLOSINAS en una sola pagina.
-
-                    Tambien podes visitar nuestro salon de ventas en Colon 223 - Monteros - Tucumán, abierto al publico desde el año 2000.
-
+                    <br>
+                    <br>
+                    Los rubros que abarcamos te dan la posibilidad de encontrar todo lo que necesitas para REGALOS, DESCARTABLES, COTILLON y EL MEJOR SURTIDO DE GOLOSINAS en una sola pagina.
+                    <br>
+                    <br>
+                    Tambien podes visitar nuestro salon de ventas en Monteros, abierto al publico desde el 2000.
+                    <br>
+                    <br>
                     Te esperamos!
                 </p>
             
             </div>
-            <div class="aboount-img">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="abount-img">  
 
+                <img class="slider-item" src="img/tienda/Tienda-Golosinas-7_.webp"/>
+                <img class="slider-item" src="img/tienda/Tienda-Golosinas-8_.webp"/>
+                <img class="slider-item" src="img/tienda/tiendaa-goolosinas.jpg" />
+                <img class="slider-item" src="img/tienda/Tienda-Golosinas.jpg" />
+
+              </div>
+            
+        </section>
+
+        <!------- CARDS-PRODUCTOS-GOLOSINA ---------->
+        <section class="product" id="golosinas">
+
+            <!--cards - info-->
+            <div class="card-info">
+                <h1>Golosinas</h1>
+                <p>En la Casa de Golocenter, encontrarás todo tipo de golosinas, tanto para niños como para adultos: golosinas de colores, golosinas gigantes y golosinas con las formas más divertidas que jamás hayas visto. 
+                    Echa un vistazo, ¡no te dejaran indiferente!<br>
+                    <br>
+                    Queremos que disfrutes de estos pequeños dulces en las situaciones más especiales, y por ello, te presentamos la idea de ofrecer las mejores bolsas de caramelos para organizar fiestas infantiles combinando todo tipo de golosinas: 
+                    caramelos sin gluten, caramelos sin azúcar,etc. <br>
+                    <br>
+                    Además, en la tienda de golocenter, encontrarás divertidas golosinas de fruta, todo tipo de chicles, gomitas, malvaviscos, Alfajores, etc.<br></p>
+
+                
+            </div>
+        
+            <!--cards -->
+        
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Alfajores</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Caramelos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Chupetines</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Chicles</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Gomitas</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Galletas</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Turrones</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Bombones</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Chocolates</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Jugos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Juguitos p/congelar</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Gaseosas</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!------- CARDS-PRODUCTOS-COMBO-CUMPLEAÑOS ---------->
+        <section class="product" id="combos">
+
+            <!--cards - info-->
+            <div class="card-info">
+                <h1>COMBO CUMPLEAÑOS</h1>
+                <p>En la Casa de Golocenter, encontrarás todo tipo de golosinas, tanto para niños como para adultos: golosinas de colores, golosinas gigantes y golosinas con las formas más divertidas que jamás hayas visto. 
+                    Echa un vistazo, ¡no te dejaran indiferente!<br>
+                    <br>
+                    Queremos que disfrutes de estos pequeños dulces en las situaciones más especiales, y por ello, te presentamos la idea de ofrecer las mejores bolsas de caramelos para organizar fiestas infantiles combinando todo tipo de golosinas: 
+                    caramelos sin gluten, caramelos sin azúcar,etc. <br>
+                    <br>
+                    Además, en la tienda de golocenter, encontrarás divertidas golosinas de fruta, todo tipo de chicles, gomitas, malvaviscos, Alfajores, etc.<br></p>
+
+                
+            </div>
+        
+            <!------- CARDS-PRODUCTOS ---------->
+        
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 10 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 15 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 20 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 25 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 30 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 35 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 40 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 45 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 50 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Combo p/ 60 chicos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
             </div>
 
         </section>
-       
+
+        <!------- CARDS-PRODUCTOS-COTILLON ---------->
+        <section class="product" id="cotillon">
+
+            <!--cards - info-->
+            <div class="card-info">
+                <h1>COTILLON</h1>
+                <p>En la Casa de Golocenter, encontrarás todo tipo de golosinas, tanto para niños como para adultos: golosinas de colores, golosinas gigantes y golosinas con las formas más divertidas que jamás hayas visto. 
+                    Echa un vistazo, ¡no te dejaran indiferente!<br>
+                    <br>
+                    Queremos que disfrutes de estos pequeños dulces en las situaciones más especiales, y por ello, te presentamos la idea de ofrecer las mejores bolsas de caramelos para organizar fiestas infantiles combinando todo tipo de golosinas: 
+                    caramelos sin gluten, caramelos sin azúcar,etc. <br>
+                    <br>
+                    Además, en la tienda de golocenter, encontrarás divertidas golosinas de fruta, todo tipo de chicles, gomitas, malvaviscos, Alfajores, etc.<br></p>
+
+                
+            </div>
+        
+            <!------- CARDS-PRODUCTOS---------->
+        
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Alfajores</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Caramelos</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Chupetines</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+        
+                <div class="product-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                </div>
+
+                <div class="product-title">
+                    <h1>Chicles</h1>
+                    <a href="#"><button>Visitar</button></a>
+                </div>
+            </div>
+ 
+
+        </section>
+
+        <section class="contact-section" id="contacto">
+
+            <div class="contact-info">
+                <h2>Información de Contacto</h2> <br>
+                <p><strong>Correo Electrónico:</strong> golocenter@hotmail.com</p> <br>
+                <p><strong>Teléfono:</strong> 3863532900</p> <br>
+                <p><strong>Dirección:</strong> Dirección: Colon 223, Monteros, Tucumán, Argentina</p> <br>
+                <h3>Horario de Atención</h3> <br>
+                <p>Lunes a Viernes: 9:00 AM - 10:00 PM<br>Sábados: 10:00 AM - 21:00 PM<br>Domingos: Cerrado</p> <br>
+                <h3>Síguenos en nuestras Redes Sociales:</h3> <br>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta, comentario o sugerencia sobre nuestras golosinas? ¡Nos encantaría saber de ti!</p>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required>
+                    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" name="correo" required>
+                    
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" rows="5" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <div class="section-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.612005700704!2d-65.50188022571221!3d-27.168495303937355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423cbdd0a36e3e9%3A0xac0b2b5b50de4d2!2sGOLOCENTER!5e0!3m2!1ses-419!2sar!4v1726178453156!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+         
     </main>
 
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Envios</h4>
+            <p>Tucumán</p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#golosinas">Golosinas</a></li>
+                <li><a href="#golosinas">Combos Cumpleaños</a></li>
+                <li><a href="#cotillon">Cotillon</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#abount">Quienes Somos</a></li>
+              
+            </ul>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Contáctanos</h4>
+            <p>Teléfono: <a href="tel:541168082761">386342885</a></p>
+            <p>Alternativo: <a href="tel:47865947">3863532900</a></p>
+            <p>Email: <a href="mailto:papijusticia@hotmail.com">golocenter@hotmail.com</a></p>
+            <p>Dirección: Colon 223, Monteros, Tucumán, Argentina</p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Sigamos </h4>
+
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="" alt="Twitter" />
+            </a>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Medios de Envío</h4>
+            <a href="https://www.andreani.com.ar" target="_blank">
+                <img src="" alt="Andreani" />
+            </a>
+            <a href="https://www.correoargentino.gob.ar" target="_blank">
+                <img src="" alt="Correo Argentino" />
+            </a>
+        </div>
     </footer>
 </body>
 </html>
